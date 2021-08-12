@@ -1,11 +1,12 @@
-import { PageTransition } from "components";
+import { PageTransition, Wrapper } from "components";
 
 function Index() {
     return (
-        <PageTransition>
-            <p>test</p>
-            <p className="font-inter">test</p>
-        </PageTransition>
+        <Wrapper size="md" className="px-4">
+            <PageTransition>
+                test
+            </PageTransition>
+        </Wrapper>
     )
 }
 
