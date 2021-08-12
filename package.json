@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Self-made blog for my personal website built with TailwindCSS and React (NextJS) inspired by @ademilter",
+  "description": "My personal website built with TailwindCSS and React (NextJS) inspired by Adem İlter <ademilter@gmail.com>",
   "author": "Enes Bayraktar <steam.enesbayraktar@gmail.com>",
   "scripts": {
     "dev": "next",
