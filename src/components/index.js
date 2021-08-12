@@ -1,4 +1,5 @@
 import Layout from "./layout/Layout"
+import PageTransition from "./PageTransition/PageTransition";
 
 /**
  * Icon Components
@@ -6,4 +7,4 @@ import Layout from "./layout/Layout"
  * If you want to use Icon components you need to import from components/icons
  */
 
-export { Layout }
+export { Layout, PageTransition }
