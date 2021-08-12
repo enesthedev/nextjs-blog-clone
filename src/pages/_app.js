@@ -17,4 +17,3 @@ class BlogApp extends App {
 }
 
 export default BlogApp
-test
