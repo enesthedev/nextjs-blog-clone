@@ -1,6 +1,7 @@
 import Layout from "./layout/Layout"
 import PageTransition from "./PageTransition/PageTransition"
 import Wrapper from "./Wrapper/Wrapper"
+import Hero from "./Hero/Hero"
 
 /**
  * Icon Components
@@ -8,4 +9,8 @@ import Wrapper from "./Wrapper/Wrapper"
  * If you want to use Icon components you need to import from components/icons
  */
 
-export { Layout, PageTransition, Wrapper }
+export {
+    Layout,
+    Hero,
+    Wrapper,
+    PageTransition
