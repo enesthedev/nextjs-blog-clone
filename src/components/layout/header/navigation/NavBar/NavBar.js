@@ -1,13 +1,23 @@
 import PropTypes from 'prop-types'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/router"
 import { MenuIcon } from "components/icons"
 
 function NavBar(props) {
+    const router = useRouter()
+
     const [ expanded, setExpanded ] = useState(false)
     const { children, header } = props
+
+    useEffect(() => {
+        if (expanded) {
+            setExpanded(false)
+        }
+    }, [router.asPath])
+
     return (
-        <nav className="px-3 py-6 text-white text-opacity-60 flex gap-3">
+        <nav className="py-6 text-white text-opacity-60 flex flex-col gap-2 sm:flex-row sm:gap-5">
             { expanded ?
                 children
                 :
