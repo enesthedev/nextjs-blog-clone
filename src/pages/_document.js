@@ -6,7 +6,7 @@ class BlogDocument extends Document {
             <>
                 <Html>
                     <Head />
-                    <body>
+                    <body className="bg-gray-1000">
                         <Main />
                         <NextScript />
                     </body>
@@ -15,3 +15,5 @@ class BlogDocument extends Document {
         )
     }
 }
+
+export default BlogDocument
