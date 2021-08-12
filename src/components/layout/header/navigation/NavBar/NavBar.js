@@ -1,4 +1,6 @@
-import { useState } from "react";
+import PropTypes from 'prop-types'
+
+import { useState } from "react"
 import { MenuIcon } from "components/icons"
 
 function NavBar(props) {
@@ -19,5 +21,10 @@ function NavBar(props) {
         </div>
     )
 }
+
+NavBar.propTypes = {
+    header: PropTypes.string.isRequired
+}
+
 
 export default NavBar

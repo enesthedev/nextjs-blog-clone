@@ -1,13 +1,20 @@
-import { NavBar } from "./navigation"
+import PropTypes from 'prop-types'
 
-function Header() {
+import { NavBar, NavLink } from "./navigation"
+
+function Header(props) {
+    const { menus } = props;
     return (
         <header className="w-full flex justify-start px-4 max-w-screen-md">
             <NavBar header="Giriş">
-                test
+
             </NavBar>
         </header>
     )
+}
+
+Header.propTypes = {
+    menus: PropTypes.array.isRequired
 }
 
 export default Header;
