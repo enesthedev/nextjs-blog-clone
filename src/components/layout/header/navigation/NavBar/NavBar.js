@@ -7,7 +7,7 @@ function NavBar(props) {
     const [ expanded, setExpanded ] = useState(false)
     const { children, header } = props
     return (
-        <div className="px-3 py-6 text-white text-opacity-60">
+        <nav className="px-3 py-6 text-white text-opacity-60 flex gap-3">
             { expanded ?
                 children
                 :
@@ -18,7 +18,7 @@ function NavBar(props) {
                     </button>
                 </>
             }
-        </div>
+        </nav>
     )
 }
 

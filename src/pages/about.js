@@ -1,12 +1,12 @@
 import { PageTransition } from "components";
 
-function Index() {
+function About() {
     return (
         <PageTransition>
-            <p>test</p>
+            <p>test222</p>
             <p className="font-inter">test</p>
         </PageTransition>
     )
 }
 
-export default Index
+export default About
