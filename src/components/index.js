@@ -14,3 +14,4 @@ export {
     Hero,
     Wrapper,
     PageTransition
+}
