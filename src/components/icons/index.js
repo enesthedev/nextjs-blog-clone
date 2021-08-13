@@ -1,3 +1,3 @@
-import MenuIcon from "./MenuIcon/MenuIcon";
+import MenuIcon from "./MenuIcon/MenuIcon"
 
 export { MenuIcon }

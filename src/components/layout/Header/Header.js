@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 import { useRouter } from "next/router"
 import { NavBar, NavLink } from "./navigation"
@@ -31,4 +31,4 @@ Header.propTypes = {
     menus: PropTypes.object.isRequired
 }
 
-export default Header;
+export default Header

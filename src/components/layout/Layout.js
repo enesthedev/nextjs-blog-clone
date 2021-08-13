@@ -1,4 +1,4 @@
-import Header from "./header/Header"
+import Header from "./Header/Header"
 
 function Layout({ children }) {
     return (

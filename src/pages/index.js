@@ -1,4 +1,4 @@
-import {PageTransition, Wrapper, Hero, Social} from "components";
+import {PageTransition, Wrapper, Hero, Social, BoldLink} from "components";
 
 function Index() {
     return (
@@ -9,7 +9,7 @@ function Index() {
                     İstanbulda Üniversite okuyan bir Yazılımcıyım.
                 `}>
                     <p>Javascript, front-end teknolojileri, web servisleri, bilgisayar oyunları ve araştırma gibi konularla yakından ilgileniyorum.</p>
-                    <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde Github adresimde paylaşıyorum.</p>
+                    <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde <BoldLink to="https://github.com/enesbayrktar/" content="Github" /> adresimde paylaşıyorum.</p>
                     <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaları olduğuna inanıyorum.</p>
                     <p>Son zamanlarda sektörde kendimi geliştirebilmek için bir uğraş içerisindeyim.</p>
                     <Social color="green"></Social>
