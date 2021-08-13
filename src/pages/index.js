@@ -12,7 +12,7 @@ function Index() {
                     <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde Github adresimde paylaşıyorum.</p>
                     <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaları olduğuna inanıyorum.</p>
                     <p>Son zamanlarda sektörde kendimi geliştirebilmek için bir uğraş içerisindeyim.</p>
-                    <Social color="purple">test</Social>
+                    <Social color="green"></Social>
                 </Hero>
             </PageTransition>
         </Wrapper>
