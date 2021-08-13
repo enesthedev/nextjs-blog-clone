@@ -15,7 +15,7 @@ function Index() {
                     <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaları olduğuna inanıyorum.</p>
                     <p>Son zamanlarda sektörde kendimi geliştirebilmek için bir uğraş içerisindeyim.</p>
                     <Divider color="white" opacity="20"/>
-                    <Social color="green" mt="2">
+                    <Social color="white" mt="0">
                         <h1 className="text-xl">Biyografi</h1>
                         <p>canım</p>
                     </Social>
