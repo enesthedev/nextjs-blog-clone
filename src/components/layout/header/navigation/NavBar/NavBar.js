@@ -24,7 +24,7 @@ function NavBar(props) {
                 <>
                     <button className="flex justify-start items-center" onClick={() => setExpanded(true)}>
                         <MenuIcon />
-                        <h2 className="text-lg font-light ml-2">{ header }</h2>
+                        <h2 className="text-lg font-normal ml-2">{ header }</h2>
                     </button>
                 </>
             }

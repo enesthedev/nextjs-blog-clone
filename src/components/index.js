@@ -1,7 +1,9 @@
 import Layout from "./layout/Layout"
+import Wrapper from "./layout/Wrapper/Wrapper"
+import Hero from "./typography/Hero/Hero"
+import Social from "./typography/Social/Social";
+
 import PageTransition from "./PageTransition/PageTransition"
-import Wrapper from "./Wrapper/Wrapper"
-import Hero from "./Hero/Hero"
 
 /**
  * Icon Components
@@ -12,6 +14,7 @@ import Hero from "./Hero/Hero"
 export {
     Layout,
     Hero,
+    Social,
     Wrapper,
     PageTransition
 }
