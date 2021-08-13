@@ -14,7 +14,7 @@ function NavBar(props) {
         if (expanded) {
             setExpanded(false)
         }
-    }, [expanded, router.asPath])
+    }, [router.asPath])
 
     return (
         <nav className="py-6 text-white text-opacity-60 flex flex-col gap-2 sm:flex-row sm:gap-5">
