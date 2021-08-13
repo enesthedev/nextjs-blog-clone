@@ -11,7 +11,7 @@ function Layout({ children, menus }) {
 }
 
 Layout.propTypes = {
-    menus: PropTypes.array.isRequired
+    menus: PropTypes.object.isRequired
 }
 
 export default Layout
