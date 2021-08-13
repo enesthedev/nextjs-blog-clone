@@ -1,4 +1,6 @@
-import {PageTransition, Wrapper, Hero, Social, BoldLink} from "components";
+import { PageTransition } from "components/transition"
+import { Hero, Social, BoldLink } from "components/typography"
+import { Wrapper } from "components/layout"
 
 function Index() {
     return (
@@ -12,7 +14,7 @@ function Index() {
                     <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde <BoldLink to="https://github.com/enesbayrktar/" content="Github" /> adresimde paylaşıyorum.</p>
                     <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaları olduğuna inanıyorum.</p>
                     <p>Son zamanlarda sektörde kendimi geliştirebilmek için bir uğraş içerisindeyim.</p>
-                    <Social color="green"></Social>
+                    <Social color="green">test</Social>
                 </Hero>
             </PageTransition>
         </Wrapper>

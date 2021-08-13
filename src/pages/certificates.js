@@ -1,12 +1,12 @@
-import {PageTransition, Wrapper, Hero, Social} from "components";
+import { PageTransition } from "components/transition"
+import { Hero, Social, BoldLink } from "components/typography"
+import { Wrapper } from "components/layout"
 
 function Certificates() {
     return (
-        <Wrapper size="md" className="px-4 mt-4">
+        <Wrapper size="md" className="px-4 mt-3">
             <PageTransition>
-                <Social color="blue" link="https://www.linkedin.com/in/enesbayrktar/">
-                    Benimle alakalı tüm sertifikaları görmek istiyorsanız bu kutucuğu tıklatabilirsiniz.
-                </Social>
+                <Social color="green">Test</Social>
             </PageTransition>
         </Wrapper>
     )

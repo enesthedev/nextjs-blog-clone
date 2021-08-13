@@ -1,7 +1,7 @@
 import React from "react"
 import App  from "next/app"
 
-import { Layout } from "components";
+import { Layout } from "components/layout"
 
 import "styles/tailwind.css"
 import "styles/extend.css"
