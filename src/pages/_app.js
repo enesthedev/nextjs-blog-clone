@@ -10,7 +10,12 @@ class BlogApp extends App {
     render() {
         const { Component, pageProps } = this.props
         return (
-            <Layout>
+            <Layout menus={{
+                '/': 'Giriş',
+                '/projects': 'Fikirler',
+                '/certificates': 'Sertifikalar',
+                '/bookmarks': 'Yer İmleri'
+            }}>
                 <Component {...pageProps} />
             </Layout>
         )
