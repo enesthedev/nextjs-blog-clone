@@ -8,7 +8,7 @@ function Social({ color = 'blue', link = false, children }) {
         </a>
         :
         <div
-            className={`py-4 px-6 mt-3 rounded-xl bg-${color}-900 bg-opacity-50 text-base text-${color}-400 hover:underline hover:bg-opacity-75`}>
+            className={`py-4 px-6 mt-3 rounded-xl bg-${color}-900 bg-opacity-50 text-base text-${color}-400 hover:bg-opacity-75`}>
             {children}
         </div>
 }
