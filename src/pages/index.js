@@ -1,5 +1,5 @@
 import { PageTransition } from "components/transition"
-import { Hero, Social, BoldLink } from "components/typography"
+import { Hero, Social, BoldLink, Divider } from "components/typography"
 import { Wrapper } from "components/layout"
 
 function Index() {
@@ -14,7 +14,8 @@ function Index() {
                     <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde <BoldLink to="https://github.com/enesbayrktar/" content="Github" /> adresimde paylaşıyorum.</p>
                     <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaları olduğuna inanıyorum.</p>
                     <p>Son zamanlarda sektörde kendimi geliştirebilmek için bir uğraş içerisindeyim.</p>
-                    <Social color="green">
+                    <Divider color="white" opacity="20"/>
+                    <Social color="green" mt="2">
                         <h1 className="text-xl">Biyografi</h1>
                         <p>canım</p>
                     </Social>
