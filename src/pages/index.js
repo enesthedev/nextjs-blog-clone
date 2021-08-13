@@ -1,4 +1,4 @@
-import { PageTransition, Wrapper, Hero } from "components";
+import {PageTransition, Wrapper, Hero, Social} from "components";
 
 function Index() {
     return (
@@ -12,7 +12,7 @@ function Index() {
                     <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde Github adresimde paylaşıyorum.</p>
                     <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaları olduğuna inanıyorum.</p>
                     <p>Son zamanlarda sektörde kendimi geliştirebilmek için bir uğraş içerisindeyim.</p>
-                    <></>
+                    <Social color="purple">test</Social>
                 </Hero>
             </PageTransition>
         </Wrapper>
