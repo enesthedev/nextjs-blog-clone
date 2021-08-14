@@ -7,10 +7,10 @@ function Certificates() {
         <Wrapper size="md" className="px-4 mt-7">
             <PageTransition>
                 <Hero title={{
-                    text: "Kendime bir motivasyon kaynağı olan sertifikalarımı bu sayfadan görüntüleyebilirsiniz",
+                    text: "Kendime bir motivasyon kaynağı olan sertifikalarımı bu sayfadan görüntüleyebilirsiniz ⟶",
                     weight: "base"
                 }} />
-                <Social color="green" top="5">Test</Social>
+                <Social color="green" top="10" size="sm">Test</Social>
             </PageTransition>
         </Wrapper>
     )
