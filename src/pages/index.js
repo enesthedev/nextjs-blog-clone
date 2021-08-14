@@ -37,7 +37,7 @@ function Index() {
                         Araştırmalara başladım tabii içimde bir heyecan. İndirdim hazır bir sunucu ve açtım oyunu. İlk defa kendi sunucumu oluşturmuştum ki sol üstte
                         'Blah blah Gaming' yazmaktaydı. Garip olucak ama onu değiştirmek için dosyalarda aranırken buldum kendimi. Böylece ilk Merhaba Dünyamı demiş oldum bu sektöre
                     </p>
-                    <Social color="yellow" size="sm" mt="0">
+                    <Social color="yellow" size="sm" top="0">
                         İşte o gün bugündür kodlarla iç içe bir hayat sürüyorum. Bundan oldukça memnunum ve yaptığım işe aşığım. Bence en önemlisi de bu nokta..
                     </Social>
                 </Hero>
