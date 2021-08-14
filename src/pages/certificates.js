@@ -21,22 +21,22 @@ function Certificates() {
                         color: "base"
                     }} className="mt-2 pb-5">
                         <div className="grid grid-cols-1 gap-1 md:gap-5 md:grid-cols-2">
-                            <Social color="" top="0" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social color="" top="0" size="sm" link="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/101">
                                 Web Programlama 101 <small className="block">(Görüntülemek için tıklayın)</small>
                             </Social>
-                            <Social color="" top="0" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social color="" top="0" size="sm" link="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/201">
                                 Web Programlama 201 <small className="block">(Görüntülemek için tıklayın)</small>
                             </Social>
-                            <Social color="" top="0" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social color="" top="0" size="sm" link="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/301">
                                 Web Programlama 301 <small className="block">(Görüntülemek için tıklayın)</small>
                             </Social>
-                            <Social color="" top="0" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social color="" top="0" size="sm" link="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/302">
                                 Web Programlama 302 <small className="block">(Görüntülemek için tıklayın)</small>
                             </Social>
-                            <Social color="" top="0" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social color="" top="0" size="sm" link="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/401">
                                 Web Programlama 401 <small className="block">(Görüntülemek için tıklayın)</small>
                             </Social>
-                            <Social color="" top="0" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social color="" top="0" size="sm" link="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/402">
                                 Web Programlama 402 <small className="block">(Görüntülemek için tıklayın)</small>
                             </Social>
                         </div>
