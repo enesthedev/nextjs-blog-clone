@@ -1,15 +1,8 @@
-import { useEffect } from "react"
 import { PageTransition } from "components/transition"
 import { Hero, Social, BoldLink, Divider } from "components/typography"
 import { Wrapper } from "components/layout"
 
 function Index() {
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            console.log('test')
-        })
-    })
-
     return (
         <Wrapper size="md" className="px-4">
             <PageTransition>
