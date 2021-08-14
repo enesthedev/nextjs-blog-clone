@@ -22,38 +22,51 @@ function Certificates() {
                         weight: "base",
                         size: "xl"
                     }}>
-                    <div className="grid gap-3 md:gap-3" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))" }}>
-                        <div>
-                            <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/101" rel="noreferrer">
-                                Web Programlama 101
-                            </a>
+                        <div className="grid gap-3 md:gap-3" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))" }}>
+                            <div>
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/101" rel="noreferrer">
+                                    Web Programlama 101
+                                </a>
+                            </div>
+                            <div>
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/201" rel="noreferrer">
+                                    Web Programlama 201
+                                </a>
+                            </div>
+                            <div>
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/301" rel="noreferrer">
+                                    Web Programlama 301
+                                </a>
+                            </div>
+                            <div>
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/302" rel="noreferrer">
+                                    Web Programlama 302
+                                </a>
+                            </div>
+                            <div>
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/401" rel="noreferrer">
+                                    Web Programlama 401
+                                </a>
+                            </div>
+                            <div>
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/402" rel="noreferrer">
+                                    Web Programlama 402
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/201" rel="noreferrer">
-                                Web Programlama 201
-                            </a>
+                    </Hero>
+                    <Hero title={{
+                        text: "Tasarım Teknolojileri üzerine",
+                        weight: "base",
+                        size: "xl"
+                    }}>
+                        <div className="grid gap-3 md:gap-3" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))" }}>
+                            <div>
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=aADxroRz" rel="noreferrer">
+                                    Web Sitesi Kullanılabilirliği
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/301" rel="noreferrer">
-                                Web Programlama 301
-                            </a>
-                        </div>
-                        <div>
-                            <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/302" rel="noreferrer">
-                                Web Programlama 302
-                            </a>
-                        </div>
-                        <div>
-                            <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/401" rel="noreferrer">
-                                Web Programlama 401
-                            </a>
-                        </div>
-                        <div>
-                            <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/402" rel="noreferrer">
-                                Web Programlama 402
-                            </a>
-                        </div>
-                    </div>
                     </Hero>
                 </div>
             </PageTransition>
