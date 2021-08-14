@@ -1,18 +1,20 @@
 import PropTypes from "prop-types"
 
 function Hero(props) {
-    const { title, children, size = '2xl', gap = '7', className } = props
+    const { title, gap = '7', className, children } = props
+    const { size, color, weight, text } = title
 
     return (
         <div className={`flex flex-col text-white text-xl font-normal text-opacity-60 gap-${gap} ${className}`}>
-            <h1 className={`text-${size} text-white font-bold whitespace-pre-line`}>{title}</h1>
+            <h1 className={`text-${size ?? "2xl"} text-${color ?? "white"} font-${weight ?? "bold"} whitespace-pre-line`}>{text ?? ""}</h1>
             { children }
         </div>
     )
 }
 
 Hero.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.object.isRequired,
+    gap: PropTypes.string
 }
 
 export default Hero

@@ -1,12 +1,15 @@
 import { PageTransition } from "components/transition"
-import { Social } from "components/typography"
+import { Social, Hero } from "components/typography"
 import { Wrapper } from "components/layout"
 
 function Certificates() {
     return (
-        <Wrapper size="md" className="px-4 mt-3">
+        <Wrapper size="md" className="px-4 mt-7">
             <PageTransition>
-                <p className="text-highlight text-2xl">test</p>
+                <Hero title={{
+                    text: "Test mesajı",
+                    weight: "base"
+                }} />
                 <Social color="green">Test</Social>
             </PageTransition>
         </Wrapper>
