@@ -13,7 +13,7 @@ function Index() {
                     `
                 }} className="pb-7">
                     <p>Javascript, front-end teknolojileri, web servisleri, bilgisayar oyunları ve araştırma gibi konularla yakından ilgileniyorum.</p>
-                    <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde <BoldLink to="https://github.com/enesbayrktar/" content="Github" /> adresimde paylaşıyorum.</p>
+                    <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde <BoldLink className="underline" to="https://github.com/enesbayrktar/" content="Github" /> adresimde paylaşıyorum.</p>
                     <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaçları olduğuna inanıyorum.</p>
                 </Hero>
                 <Divider color="white" opacity="20"/>
@@ -23,7 +23,7 @@ function Index() {
                 }} gap={"5"} className="mt-9 pb-5">
                     <p className="text-sm whitespace-pre-line">
                         Yazılım dillerine olan ilgim 14 yaşımdayken başladı. O zamanlar sınıfta dışlanan çocuk olmamın da etkisi var tabii ki.
-                        Abimin yeni aldığı Asus marka bilgisayar üzerinde GTA: San Andreas Online oynuyordum her akşam. Bahsettiğim oyun öyle bir sistem ki istediğiniz oyun modunda
+                        Abimin yeni aldığı Asus marka bilgisayar üzerinde <BoldLink className="underline" to="https://mtasa.com/" content="GTA: San Andreas Online" /> oynuyordum her akşam. Bahsettiğim oyun öyle bir sistem ki istediğiniz oyun modunda
                         bir şeyler karalayabiliyor, kendinize eğlence çıkarabiliyorsunuz... Herneyse, günlerden bir gün ben de tutuldum bir sunucu açacağım diye.
                     </p>
                     <p className="text-sm whitespace-pre-line">

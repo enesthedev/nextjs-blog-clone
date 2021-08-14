@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 
-function BoldLink({ content, to, className }) {
+function BoldLink({ highlight = 'yellow-400', content, to, className }) {
     return (
-        <a className={`font-bold hover:underline ${className}`} target="_blank" href={to} rel="noreferrer">
+        <a className={`font-bold hover:underline hover:text-${highlight} ${className}`} target="_blank" href={to} rel="noreferrer">
             { content }
         </a>
     )
