@@ -62,7 +62,7 @@ function Certificates() {
                     }}>
                         <div className="grid gap-3 md:gap-3" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))" }}>
                             <div>
-                                <a className="text-sm inline-flex overflow-hidden hover:underline" target="_blank" href="https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=aADxroRz" rel="noreferrer">
+                                <a className="text-sm inline-flex overflow-hidden hover:underline" href="/static/certificates/ux101.pdf" target="_blank" rel="noreferrer">
                                     Web Sitesi Kullanılabilirliği
                                 </a>
                             </div>

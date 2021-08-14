@@ -17,11 +17,13 @@
   ],
   "license": "ISC",
   "dependencies": {
+    "file-loader": "^6.2.0",
     "framer-motion": "^4.1.17",
     "next": "^11.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
