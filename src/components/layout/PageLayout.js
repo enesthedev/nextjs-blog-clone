@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import Header from "./Header/Header"
 
-function Layout(props) {
+function PageLayout(props) {
     const { children, menus } = props
     return (
         <main className="w-full flex flex-col items-center">
@@ -11,8 +11,8 @@ function Layout(props) {
     )
 }
 
-Layout.propTypes = {
+PageLayout.propTypes = {
     menus: PropTypes.object.isRequired
 }
 
-export default Layout
+export default PageLayout

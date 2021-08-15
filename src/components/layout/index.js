@@ -1,4 +1,5 @@
-import Layout from "./Layout"
+import PageLayout from "./PageLayout"
+import MasonryLayout from "./MasonryLayout"
 import Wrapper from "./Wrapper/Wrapper"
 
-export { Layout, Wrapper }
+export { PageLayout,MasonryLayout, Wrapper }
