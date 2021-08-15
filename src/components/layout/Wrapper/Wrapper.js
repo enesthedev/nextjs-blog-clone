@@ -10,7 +10,7 @@ function Wrapper(props) {
 }
 
 Wrapper.propTypes = {
-    size: PropTypes.oneOf(['sm', 'md', 'lg'])
+    size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', '2xl'])
 }
 
 Wrapper.defaultProps = {
