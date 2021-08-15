@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 
 function Hero(props) {
-    const { title, gap = '7', className, children } = props
+    const { title, gap, className, children } = props
     const { size, color, weight, text } = title
 
     return (
@@ -15,6 +15,10 @@ function Hero(props) {
 Hero.propTypes = {
     title: PropTypes.object.isRequired,
     gap: PropTypes.string
+}
+
+Hero.defaultProps = {
+    gap: "7"
 }
 
 export default Hero

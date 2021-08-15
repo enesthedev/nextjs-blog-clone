@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 
-function BoldLink({ highlight = 'yellow-400', content, to, className }) {
+function BoldLink(props) {
+    const { highlight, content, to, className } = props
     return (
         <a className={`font-bold hover:underline hover:text-${highlight} ${className}`} target="_blank" href={to} rel="noreferrer">
             { content }
@@ -10,7 +11,12 @@ function BoldLink({ highlight = 'yellow-400', content, to, className }) {
 
 BoldLink.propTypes = {
     content: PropTypes.string.isRequired,
-    to: PropTypes.string.isRequired
+    to: PropTypes.string.isRequired,
+    highlight: PropTypes.string
+}
+
+BoldLink.defaultProps = {
+    highlight: "yellow-400"
 }
 
 export default BoldLink

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-function NavLink({ children, ...props }) {
+function NavLink(props) {
+    const { children } = props
     return (
         <Link { ...props }>
             { children }

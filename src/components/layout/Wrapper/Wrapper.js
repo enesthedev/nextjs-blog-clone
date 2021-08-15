@@ -13,4 +13,8 @@ Wrapper.propTypes = {
     size: PropTypes.oneOf(['sm', 'md', 'lg'])
 }
 
+Wrapper.defaultProps = {
+    size: "md"
+}
+
 export default Wrapper

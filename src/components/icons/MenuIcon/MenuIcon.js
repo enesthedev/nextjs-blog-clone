@@ -1,4 +1,8 @@
-function MenuIcon({ size = 28 }) {
+import PropTypes from "prop-types"
+
+function MenuIcon(props) {
+    const { size } = props
+    console.log(props, size)
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +20,14 @@ function MenuIcon({ size = 28 }) {
             />
         </svg>
     )
+}
+
+MenuIcon.propTypes = {
+    size: PropTypes.number
+}
+
+MenuIcon.defaultProps = {
+    size: 20
 }
 
 export default MenuIcon
