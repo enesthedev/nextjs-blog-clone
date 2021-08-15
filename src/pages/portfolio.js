@@ -16,7 +16,7 @@ function Portfolio() {
                         `,
                             weight: "base"
                         }}>
-                            <Social color="indigo" top="5" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social color="blue" top="5" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
                                 Tüm iş geçmişimi görmek için buraya tıklayarak LinkedIn sayfamı ziyaret edebilirsiniz ⟶
                             </Social>
                         </Hero>

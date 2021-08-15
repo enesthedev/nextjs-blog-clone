@@ -1,5 +1,5 @@
 import { PageTransition } from "components/transition"
-import { Social, Hero, Divider } from "components/typography"
+import { Social, Hero } from "components/typography"
 import { Wrapper } from "components/layout"
 
 function Certificates() {
@@ -13,7 +13,7 @@ function Certificates() {
                         `,
                         weight: "base"
                     }}>
-                        <Social color="indigo" top="5" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                        <Social color="blue" top="5" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
                             Tüm sertifikalarımı görmek için buraya tıklayarak LinkedIn sayfamı ziyaret edebilirsiniz ⟶
                         </Social>
                     </Hero>
