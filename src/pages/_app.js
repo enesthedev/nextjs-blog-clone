@@ -12,9 +12,9 @@ class BlogApp extends App {
         return (
             <Layout menus={{
                 '/': 'Giriş',
-                '/projects': 'Fikirler',
+                '/portfolio': 'Portföy',
                 '/certificates': 'Sertifikalar',
-                '/bookmarks': 'Yer İmleri'
+                '/contact': 'İletişim'
             }}>
                 <Component {...pageProps} />
             </Layout>
