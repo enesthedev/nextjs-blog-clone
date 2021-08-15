@@ -2,7 +2,6 @@ import PropTypes from "prop-types"
 
 function MenuIcon(props) {
     const { size } = props
-    console.log(props, size)
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

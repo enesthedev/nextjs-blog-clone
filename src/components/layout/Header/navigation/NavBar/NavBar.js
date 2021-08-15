@@ -36,5 +36,9 @@ NavBar.propTypes = {
     header: PropTypes.string.isRequired
 }
 
+NavBar.defaultProps = {
+    header: 'Belirtilmemiş'
+}
+
 
 export default NavBar
