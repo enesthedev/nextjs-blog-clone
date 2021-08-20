@@ -4,7 +4,7 @@ import { PageTransition } from "components/transition"
 import { Social, Hero } from "components/typography"
 import { Wrapper } from "components/layout"
 
-function Portfolio() {
+function Resume() {
     return (
         <React.Fragment>
             <Wrapper size="md" className="px-4">
@@ -23,11 +23,10 @@ function Portfolio() {
                     </div>
                 </PageTransition>
             </Wrapper>
-            <Wrapper size="lg">
-                test
+            <Wrapper size="xl" className="mt-20">
             </Wrapper>
         </React.Fragment>
     )
 }
 
-export default Portfolio
+export default Resume

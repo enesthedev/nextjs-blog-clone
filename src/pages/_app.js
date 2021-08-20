@@ -12,7 +12,7 @@ class BlogApp extends App {
         return (
             <PageLayout menus={{
                 '/': 'Giriş',
-                '/portfolio': 'Portföy',
+                '/resume': 'Özgeçmiş',
                 '/certificates': 'Sertifikalar',
                 '/contact': 'İletişim'
             }}>
