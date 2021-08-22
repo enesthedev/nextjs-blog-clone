@@ -6,9 +6,11 @@ My personal website built with [TailwindCSS](https://tailwindcss.com/) and [Reac
 - [x] Index
 - [x] Certificates
 - [ ] Resume
-- [ ] Contact
+- [x] Contact
 - [x] Responsive design
 - [ ] Switchable Dark/Light mode
 - [ ] Implement Mail.js
 - [ ] Dynamic page title
 - [ ] Search Engine Optimization
+- [ ] Multi-language support
+- [ ] Dynamic social media links support
