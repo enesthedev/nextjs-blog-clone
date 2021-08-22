@@ -3,10 +3,14 @@ import React from "react"
 import { PageTransition } from "components/transition"
 import { Social, Hero } from "components/typography"
 import { Wrapper } from "components/layout"
+import { NextSeo } from "next-seo";
 
 function Resume() {
     return (
         <React.Fragment>
+            <NextSeo
+                title="Özgeçmiş"
+            />
             <Wrapper size="md" className="px-4">
                 <PageTransition>
                     <div className="flex flex-col gap-14 pb-5">
