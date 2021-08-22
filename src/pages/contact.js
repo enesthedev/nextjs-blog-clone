@@ -1,6 +1,7 @@
 import { PageTransition } from "components/transition"
 import { BoldLink, Divider, Hero, Social } from "components/typography"
 import { Wrapper } from "components/layout"
+import { FacebookIcon, LinkedInIcon, TwitterIcon } from "components/icons";
 
 function Contact() {
     return (
@@ -12,22 +13,44 @@ function Contact() {
                         `,
                     weight: "base"
                 }}>
-                    <div className="flex flex-col gap-2">
-                        <form autoComplete={false} >
-                            test
+                    <div className="flex flex-col gap-6 mt-8">
+                        <form autoComplete="false" className="flex flex-col gap-6">
+                            <div className="flex flex-col gap-7 sm:flex-row">
+                                <label className="block w-full">
+                                    <span className="text-sm">Adınız ve Soyadınız</span>
+                                    <input type="text" className="mt-1 block w-full px-0.5 pl-2 bg-transparent border border-opacity-10 focus:ring-0 focus:border-white focus:border-opacity-20" />
+                                </label>
+                                <label className="block w-full">
+                                    <span className="text-sm">E-posta adresiniz</span>
+                                    <input type="text" className="mt-1 block w-full px-0.5 bg-transparent border-0 border-b border-white border-opacity-30 focus:ring-0 focus:border-white focus:border-opacity-20" />
+                                </label>
+                            </div>
+                            <div className="flex flex-col gap-7">
+                                <label className="block w-full">
+                                    <span className="text-sm">Mesajınız</span>
+                                    <textarea className="mt-1 block w-full px-0.5 pl-2 bg-transparent border border-opacity-10 h-32 focus:ring-0 focus:border-white focus:border-opacity-20" />
+                                </label>
+                                <button className="text-base hover:underline">Gönder</button>
+                            </div>
                         </form>
-                        <Social color="black">
-                            <div className="flex gap-2 flex-col">
-                                <Hero title={{text: [<small>Lütfen gitmek istediğiniz sosyal medya platformuna tıklayınız</small>], weight:"base", size:"lg"}}/>
-                                <Divider color="white" opacity="10"/>
-                                <div className="flex gap-2 flex-col sm:flex-row">
-                                    <BoldLink to="/" content="Facebook"/>
-                                    <BoldLink to="/" content="Twitter"/>
-                                    <BoldLink to="/" content="Telegram"/>
-                                    <BoldLink to="/" content="Github"/>
+                        <div className="flex gap-5 flex-col">
+                            <Divider color="white" opacity="10"/>
+                            <div className="flex gap-4 flex-col">
+                                <Hero title={{
+                                    text: "Lütfen görmek istediğiniz sosyal medya platformuna tıklayınız",
+                                    size: "sm",
+                                    weight: "base"
+                                }} />
+                                <div className="flex gap-6 flex-row">
+                                    <a href="https://web.facebook.com/enes.bayraktar.7334/" target="_blank" className="transition transition-all duration-100 hover:text-blue-500">
+                                        <FacebookIcon size={24}/>
+                                    </a>
+                                    <a href="https://twitter.com/enesthedev" target="_blank" className="transition transition-all duration-100 hover:text-blue-400">
+                                        <TwitterIcon size={24}/>
+                                    </a>
                                 </div>
                             </div>
-                        </Social>
+                        </div>
                     </div>
                 </Hero>
             </PageTransition>
