@@ -17,6 +17,7 @@
   ],
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "file-loader": "^6.2.0",
     "framer-motion": "^4.1.17",
     "masonic": "^3.4.1",
