@@ -2,16 +2,11 @@
 
 My personal website built with [TailwindCSS](https://tailwindcss.com/) and [React (NextJS)](https://nextjs.org/) inspired by [@ademilter](https://github.com/ademilter).
 
-## Milestones
-[React](ttps://nextjs.org/) blog todo list, milestones and another tasks.
-
-### Pages
+## TODO List
 - [x] Index
 - [x] Certificates
 - [ ] Resume
 - [ ] Contact
-
-### Features
 - [x] Responsive design
 - [ ] Switchable Dark/Light mode
 - [ ] Implement Mail.js
