@@ -1,7 +1,8 @@
 import React from "react"
-import App  from "next/app"
+import App, { Container } from "next/app"
 
 import { PageLayout } from "components/layout"
+import { DefaultSeo} from "next-seo"
 
 import "styles/tailwind.css"
 import "styles/extend.css"
@@ -10,14 +11,19 @@ class BlogApp extends App {
     render() {
         const { Component, pageProps } = this.props
         return (
-            <PageLayout menus={{
-                '/': 'Giriş',
-                '/resume': 'Özgeçmiş',
-                '/certificates': 'Sertifikalar',
-                '/contact': 'İletişim'
-            }}>
-                <Component {...pageProps} />
-            </PageLayout>
+            <React.Fragment>
+                <DefaultSeo
+                    titleTemplate="%s - Enes Bayraktar"
+                />
+                <PageLayout menus={{
+                    '/': 'Giriş',
+                    '/resume': 'Özgeçmiş',
+                    '/certificates': 'Sertifikalar',
+                    '/contact': 'İletişim'
+                }}>
+                    <Component {...pageProps} />
+                </PageLayout>
+            </React.Fragment>
         )
     }
 }
