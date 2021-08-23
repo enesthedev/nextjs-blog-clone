@@ -12,5 +12,5 @@ My personal website built with [TailwindCSS](https://tailwindcss.com/) and [Reac
 - [ ] Implement Mail.js
 - [x] Dynamic page title
 - [x] Search Engine Optimization
-- [ ] Multi-language support
-- [ ] Dynamic social media links support
+- [x] Dynamic social media links support
+- [x] Half-Dynamic pages data support
