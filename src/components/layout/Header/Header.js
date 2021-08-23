@@ -5,7 +5,7 @@ import { NavBar, NavLink } from "./navigation"
 
 function Header(props) {
     const router = useRouter()
-    const splitPath = router.asPath.split('/')
+    const splitPath = router.asPath.split("/")
     const pathName = splitPath.length > 2 ? `/${splitPath[1]}` : router.pathname
 
     const { menus } = props
