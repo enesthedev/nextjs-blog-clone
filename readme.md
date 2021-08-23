@@ -22,7 +22,7 @@ export async function getStaticProps() {
                                 title: "Web Programlama 101",
                                 link: "https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/enesbayraktar/Web%20Programlama/101"
                             },
-                            ...
+                            //...
                         ]
                     },
                     {
