@@ -12,16 +12,11 @@ function NotFound() {
                 title="Bilinmeyen Sayfa"
             />
             <PageTransition>
-                <Wrapper size="md" className="px-4">
-                    <Hero title={{
-                        text: `
-                        Aradığınız sayfayı bulamadım ):
-                        `,
-                        weight: "base"
-                    }}>
-                    <span>
-                        Lütfen gitmek istediğiniz sayfanın var olduğundan emin olun. Geri dönmek için lütfen <BoldLink router={true} to="/" content="tıklayın"/>.
-                    </span>
+                <Wrapper size="md" className="px-4 pt-8 pb-2">
+                    <Hero title="Aradığınız sayfayı bulamadım" titleClassName="font-normal text-white" className="gap-5">
+                        <span>
+                            Lütfen gitmek istediğiniz sayfanın var olduğundan emin olun. Geri dönmek için lütfen <BoldLink router={true} to="/" text="tıklayın"/>.
+                        </span>
                     </Hero>
                 </Wrapper>
             </PageTransition>

@@ -13,9 +13,9 @@ function Index(props) {
                 title={page.head.title}
                 description={page.head.description}
             />
-            <Wrapper size="md" className="px-4 pt-8 pb-2">
+            <Wrapper size="md" className="px-4 pt-7 pb-2">
                 <PageTransition>
-                    <Hero title={{ text: page.title }} className="pb-7">
+                    <Hero title={page.title} className="pb-7 gap-7">
                         {typeof page.description === "object" ? page.description.map((text, index) => {
                             return (
                                 <p key={index}>
@@ -26,26 +26,19 @@ function Index(props) {
                     </Hero>
                 </PageTransition>
             </Wrapper>
-            <Wrapper size="lg" className="px-4 pb-4 flex justify-center align-center">
+            <Wrapper size="lg" className="px-4 pb-4 mt-4 flex justify-center align-center">
                 <PageTransition>
                     <div className="flex flex-col gap-7 px-4 max-w-screen-md xl:max-w-screen-lg xl:flex-row">
-                        <Hero title={{ text: page.sections.head.title, size: "base" }} gap={"5"} className="mt-9  xl:p-12 xl:border-2 xl:border-r-0">
+                        <Hero title={page.sections.head.title} titleClassName="text-base" className="mt-9 gap-5 xl:p-12 xl:border-2 xl:border-r-0">
                             {typeof page.sections.head.description === "object" ? page.sections.head.description.map((description, index) => {
                                 return (
-                                    <p key={index} className="text-sm whitespace-pre-line">
+                                    <p key={index} className="base-hero text-sm whitespace-pre-line">
                                         { description }
                                     </p>
                                 )
                             }) : page.sections.head.description}
-                            {page.sections.head.socials ? page.sections.head.socials.map((social, index) => {
-                                return (
-                                    <Social color={social.color} size="sm" top="0">
-                                        { social.text }
-                                    </Social>
-                                )
-                            }) : ''}
                         </Hero>
-                        <Hero title={{ text: page.sections.sub.title, size: "base" }} gap={"5"} className="mt-9 xl:p-12 xl:border-2 xl:border-l-8 xl:border-white xl:border-opacity-10 xl:mt-0">
+                        <Hero title={page.sections.sub.title} titleClassName="text-base" className="mt-9 gap-5 xl:p-12 xl:border-2 xl:border-l-8 xl:border-white xl:border-opacity-10 xl:mt-0">
                             {typeof page.sections.sub.description === "object" ? page.sections.sub.description.map((description, index) => {
                                 return (
                                     <p key={index} className="text-sm whitespace-pre-line">
@@ -53,13 +46,6 @@ function Index(props) {
                                     </p>
                                 )
                             }) : page.sections.sub.description}
-                            {page.sections.sub.socials ? page.sections.sub.socials.map((social, index) => {
-                                return (
-                                    <Social color={social.color} size="sm" top="0">
-                                        { social.text }
-                                    </Social>
-                                )
-                            }) : ''}
                         </Hero>
                     </div>
                 </PageTransition>
@@ -88,8 +74,7 @@ export async function getStaticProps() {
                         description: [
                             "ismim Enes. 25 Eylül 2000 tarihinde Trabzonda bir devlet hastanesinde doğdum. Küçük yaşlarda abilerim sayesinde bilgisayarla tanıştım.",
                             "İlk bilgisayarım toplama bir kasaydı. Yıkanılabilir topu olan bir mouse ve kocaman tuşları olan bir klavye ile merhaba dedim elektronik dünyaya."
-                        ],
-                        socials: false
+                        ]
                     },
                     sub: {
                         title: "Yazılım kariyerim nasıl başladı?",

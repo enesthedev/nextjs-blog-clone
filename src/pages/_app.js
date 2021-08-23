@@ -1,11 +1,10 @@
 import React from "react"
-import App, { Container } from "next/app"
+import App from "next/app"
 
 import { PageLayout } from "components/layout"
-import { DefaultSeo} from "next-seo"
+import { DefaultSeo } from "next-seo"
 
 import "styles/tailwind.css"
-import "styles/extend.css"
 
 class BlogApp extends App {
     render() {

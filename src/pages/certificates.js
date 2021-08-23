@@ -13,18 +13,18 @@ function Certificates(props) {
                 title={page.head.title}
                 description={page.head.description}
             />
-            <Wrapper size="md" className="px-4">
+            <Wrapper size="md" className="px-4 pt-7 pb-2">
                 <PageTransition>
                     <div className="flex flex-col gap-14 pb-5">
-                        <Hero title={{ text: page.title, weight: "base" }}>
-                            <Social color="blue" top="5" size="sm" link={`https://www.linkedin.com/in/${social.linkedin.username}/`}>
+                        <Hero title={page.title} titleClassName="font-normal">
+                            <Social className="mt-5 text-sm" link={`https://www.linkedin.com/in/${social.linkedin.username}/`}>
                                 { social.linkedin.text }
                             </Social>
                         </Hero>
 
                         {page.sections.map((section, index) => {
                             return (
-                                <Hero key={index} title={{ text: section.title, weight: "base", size: "xl" }}>
+                                <Hero key={index} title={section.title} titleClassName="font-normal text-xl">
                                     <div className="grid gap-3 md:gap-3" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))" }}>
                                         {section.certificates.map((certificate, index) => {
                                           return (

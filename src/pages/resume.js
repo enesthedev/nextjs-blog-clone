@@ -20,7 +20,7 @@ function Resume() {
                         `,
                             weight: "base"
                         }}>
-                            <Social color="blue" top="5" size="sm" link="https://www.linkedin.com/in/enesbayrktar/">
+                            <Social link="https://www.linkedin.com/in/enesbayrktar/" className="text-sm">
                                 Tüm iş geçmişimi görmek için buraya tıklayarak LinkedIn sayfamı ziyaret edebilirsiniz ⟶
                             </Social>
                         </Hero>

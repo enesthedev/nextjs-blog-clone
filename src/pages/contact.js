@@ -13,13 +13,15 @@ function Contact(props) {
                 title={page.head.title}
                 description={page.head.description}
             />
-            <Wrapper className="px-4 pt-8 pb-2">
+            <Wrapper className="px-4 pt-7 pb-2">
                 <PageTransition>
-                    <Hero title={{ text: page.title, weight: "base" }}>
+                    <Hero title={page.title} titleClassName="font-normal" className="gap-10">
                         <small>{ page.description }</small>
-                        <Social color="green" size="sm" top="0" link={`https://wa.me/${social.whatsapp.phone}?text=${social.whatsapp.message}`}>Benimle hemen <b>Whatsapp</b> üzerinden konuşmak için tıklayın ⟶</Social>
+                        <Social className="bg-green-900 bg-opacity-50 text-green-400 text-sm mt-0" link={`https://wa.me/${social.whatsapp.phone}?text=${social.whatsapp.message}`}>
+                            Benimle hemen <b>Whatsapp</b> üzerinden konuşmak için tıklayın ⟶
+                        </Social>
                         <div className="flex flex-col gap-8">
-                            <Divider color="white" opacity="10"/>
+                            <Divider />
                             <form autoComplete="false" className="flex flex-col gap-6">
                                 <label className="block w-full">
                                     <span className="text-sm flex flex-col gap-1">
@@ -45,7 +47,7 @@ export async function getStaticProps() {
      * Static fields;
      * These fields cannot change with this props. İf you want to change you can change it by manually.
      *
-     * @static <Social color="green"... at line 20
+     * @static <Social className="bg-green-900 text-green-400"... at line 20
      */
     return {
         props: {
