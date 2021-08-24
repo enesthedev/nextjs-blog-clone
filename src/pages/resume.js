@@ -17,7 +17,7 @@ function Resume(props) {
                 <PageTransition>
                     <div className="flex flex-col gap-14 pb-5">
                         <Hero title={page.title} titleClassName="font-normal">
-                            <Social link={`https://www.github.com/${social.github.username}/`} className="bg-black bg-opacity-30 text-sm">
+                            <Social link={`https://www.github.com/${social.github.username}/`} className="bg-black text-sm text-black bg-opacity-10 dark:text-blue-400 dark:bg-opacity-30">
                                 { social.github.text }
                             </Social>
                         </Hero>

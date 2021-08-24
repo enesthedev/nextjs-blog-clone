@@ -38,7 +38,7 @@ function Index(props) {
                                 )
                             }) : page.sections.head.description}
                         </Hero>
-                        <Hero title={page.sections.sub.title} titleClassName="text-base" className="mt-9 gap-5 xl:p-12 xl:border-2 xl:border-l-8 xl:border-white xl:border-opacity-10 xl:mt-0">
+                        <Hero title={page.sections.sub.title} titleClassName="text-base" className="mt-9 gap-5 xl:p-12 xl:border-2 xl:border-l-8 xl:border-black xl:border-opacity-20 xl:mt-0 xl:dark:border-white xl:dark:border-opacity-10">
                             {typeof page.sections.sub.description === "object" ? page.sections.sub.description.map((description, index) => {
                                 return (
                                     <p key={index} className="text-sm whitespace-pre-line">

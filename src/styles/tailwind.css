@@ -18,14 +18,14 @@
     }
 
     .base--hero-container {
-        @apply flex flex-col text-white text-xl font-normal text-opacity-60 gap-5
+        @apply flex flex-col text-black text-xl font-normal text-opacity-60 gap-5 dark:text-white
     }
 
     .base--hero-h1 {
-        @apply text-2xl text-white font-bold whitespace-pre-line
+        @apply text-2xl text-black font-bold whitespace-pre-line dark:text-white
     }
 
     .base--social {
-        @apply py-4 px-6 inline-block rounded-xl bg-blue-900 bg-opacity-50 mt-3 text-base text-blue-400 hover:underline hover:bg-opacity-75
+        @apply py-4 px-6 inline-block rounded-xl bg-blue-900 bg-opacity-10  mt-3 text-base text-black transition transition-all duration-100 hover:underline dark:bg-opacity-50 dark:text-blue-400 dark:hover:bg-opacity-75
     }
 }

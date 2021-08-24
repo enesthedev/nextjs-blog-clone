@@ -17,7 +17,7 @@ function NavBar(props) {
     }, [router.asPath])
 
     return (
-        <nav className="py-6 text-white text-opacity-60 flex flex-col gap-2 sm:flex-row sm:gap-5">
+        <nav className="py-6 text-black text-opacity-60 flex flex-col gap-2 sm:flex-row sm:gap-5 dark:text-white">
             { expanded ?
                 children
                 :

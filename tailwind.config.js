@@ -1,8 +1,11 @@
 module.exports = {
   jit: true,
-  purge: [
+  purge: {
+    enabled: true,
+    content: [
       "./src/**/*.{js,ts,jsx,tsx}"
-  ],
+    ]
+  },
   darkMode: 'media',
   theme: {
     extend: {

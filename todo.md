@@ -3,7 +3,6 @@ Here you know what i need to do in this project. İf you want to contribute it g
 
 ### In Progress
 - [ ] Multi-language support
-- [ ] Light theme
 
 ### Done
 - [x] Create my first todo.md
@@ -13,3 +12,4 @@ Here you know what i need to do in this project. İf you want to contribute it g
 - [x] Update project Github and package.json description 
 - [x] Refactor Wrapper, BoldLink, Divider, Hero and Social components
 - [x] Check all components
+- [x] Light theme

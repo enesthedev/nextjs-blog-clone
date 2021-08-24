@@ -17,7 +17,7 @@ function Header(props) {
                     Object.keys(menus).map((url) => {
                         return (
                             <NavLink key={url} href={url}>
-                                <a className="text-lg font-light transition transition-all hover:text-white">{menus[url]}</a>
+                                <a className="text-lg font-light transition transition-all hover:text-black dark:hover:text-white">{menus[url]}</a>
                             </NavLink>
                         )
                     })

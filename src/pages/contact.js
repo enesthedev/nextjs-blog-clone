@@ -17,7 +17,7 @@ function Contact(props) {
                 <PageTransition>
                     <Hero title={page.title} titleClassName="font-normal" className="gap-10">
                         <small>{ page.description }</small>
-                        <Social className="bg-green-900 bg-opacity-50 text-green-400 text-sm mt-0" link={`https://wa.me/${social.whatsapp.phone}?text=${social.whatsapp.message}`}>
+                        <Social className="bg-green-900 bg-opacity-10 text-sm mt-0 dark:bg-opacity-50 dark:text-green-400" link={`https://wa.me/${social.whatsapp.phone}?text=${social.whatsapp.message}`}>
                             Benimle hemen <b>Whatsapp</b> üzerinden konuşmak için tıklayın ⟶
                         </Social>
                         <div className="flex flex-col gap-8">
@@ -28,7 +28,7 @@ function Contact(props) {
                                         <div>{ page.form.label.title } <small className="font-bold text-sm text-red-400">*</small></div>
                                         <small className="text-xs mt-2 mb-2">{ page.form.label.description }</small>
                                     </span>
-                                    <input type="email" placeholder="yourname@mail.com" required className="mt-3 block w-full px-0.5 pl-2 bg-transparent border-2 border-white border-opacity-10 placeholder-white placeholder-opacity-20 focus:ring-0 focus:border-opacity-20" />
+                                    <input type="email" placeholder="yourname@mail.com" required className="mt-3 block w-full px-0.5 pl-2 bg-transparent border-2 border-black border-opacity-10 placeholder-black placeholder-opacity-20 focus:ring-0 focus:border-opacity-20 dark:border-white dark:placeholder-white" />
                                 </label>
                                 <div className="text-right text-base">
                                     <button className="hover:underline">{ page.form.button.title }</button>
