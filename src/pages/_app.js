@@ -13,6 +13,8 @@ class BlogApp extends App {
             <React.Fragment>
                 <DefaultSeo
                     titleTemplate="%s - Enes Bayraktar"
+                    dangerouslySetAllPagesToNoIndex={true}
+                    dangerouslySetAllPagesToNoFollow={true}
                 />
                 <PageLayout menus={{
                     '/': 'Giriş',

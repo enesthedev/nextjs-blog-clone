@@ -4,9 +4,9 @@ function Hero(props) {
     const { className, titleClassName, title, children } = props
     return (
         <div className={"base--hero-container" + (className ? " " + className : "")}>
-            <h1 className={"base--hero-h1" + (titleClassName ? " " + titleClassName : "")}>
+            <h2 className={"base--hero-h1" + (titleClassName ? " " + titleClassName : "")}>
                 { title }
-            </h1>
+            </h2>
             { children }
         </div>
     )

@@ -28,7 +28,7 @@ function Index(props) {
             </Wrapper>
             <Wrapper size="lg" className="px-4 pb-4 mt-4 flex justify-center align-center">
                 <PageTransition>
-                    <div className="flex flex-col gap-7 px-4 max-w-screen-md xl:max-w-screen-lg xl:flex-row">
+                    <div className="flex flex-col gap-7 max-w-screen-md xl:max-w-screen-lg xl:flex-row">
                         <Hero title={page.sections.head.title} titleClassName="text-base" className="mt-9 gap-5 xl:p-12 xl:border-2 xl:border-r-0">
                             {typeof page.sections.head.description === "object" ? page.sections.head.description.map((description, index) => {
                                 return (
