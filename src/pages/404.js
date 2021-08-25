@@ -1,16 +1,18 @@
 import React from "react"
+import Head from "next/head"
 
 import { PageTransition } from "components/transition"
 import { Wrapper } from "components/layout"
 import { BoldLink, Hero } from "components/typography"
-import { NextSeo } from "next-seo"
 
 function NotFound() {
     return (
         <React.Fragment>
-            <NextSeo
-                title="Bilinmeyen Sayfa"
-            />
+            <Head>
+                <title>Bilinmeyen Sayfa - Enes Bayraktar</title>
+                <meta name="title" content="Bilinmeyen Sayfa - Enes Bayraktar" />
+                <meta name="description" content="Enes Bayraktar'ın kişisel bloğunda bilinmeyen bir sayfa" />
+            </Head>
             <PageTransition>
                 <Wrapper size="md" className="px-4 pt-8 pb-2">
                     <Hero title="Aradığınız sayfayı bulamadım" titleClassName="font-normal text-white" className="gap-5">

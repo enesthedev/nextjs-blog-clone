@@ -1,51 +1,35 @@
 import React from "react"
+import Head from "next/head"
 
 import { PageTransition } from "components/transition"
-import { Hero, Social, BoldLink, Divider } from "components/typography"
+import { Hero, Divider, UnderlineLink } from "components/typography"
 import { Wrapper } from "components/layout"
-import { NextSeo } from "next-seo"
 
-function Index(props) {
-    const { page } = props
+function Index() {
     return (
         <React.Fragment>
-            <NextSeo
-                title={page.head.title}
-                description={page.head.description}
-            />
-            <Wrapper size="md" className="px-4 pt-7 pb-2">
+            <Head>
+                <title>Giriş - Enes Bayraktar</title>
+                <meta name="title" content="Giriş - Enes Bayraktar" />
+                <meta name="description" content="Enes Bayraktar'ın kişisel bloğunda hakkında yayınlamış olduğu giriş bölümü. Buradan kendisi hakkındaki tüm detaylara ulaşabilirsiniz." />
+            </Head>
+            <Wrapper size="md" className="px-4 pt-7 pb-4">
                 <PageTransition>
-                    <Hero title={page.title} className="pb-7 gap-7">
-                        {typeof page.description === "object" ? page.description.map((text, index) => {
-                            return (
-                                <p key={index}>
-                                    { text }
-                                </p>
-                            )
-                        }) : page.description}
+                    <Hero title={`Ben Enes Bayraktar.\nİstanbulda Üniversite okuyan bir Yazılımcıyım.`} className="pb-7 gap-7">
+                        <p>Javascript, front-end teknolojileri, web servisleri, bilgisayar oyunları ve araştırma gibi konularla yakından ilgileniyorum.</p>
+                        <p>Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde <UnderlineLink to="https://github.com/enesbayrktar" text="Github"/> adresimde paylaşıyorum.</p>
+                        <p>İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaçları olduğuna inanıyorum.</p>
                     </Hero>
-                </PageTransition>
-            </Wrapper>
-            <Wrapper size="lg" className="px-4 pb-4 mt-4 flex justify-center align-center">
-                <PageTransition>
-                    <div className="flex flex-col gap-7 max-w-screen-md xl:max-w-screen-lg xl:flex-row">
-                        <Hero title={page.sections.head.title} titleClassName="text-base" className="mt-9 gap-5 xl:p-12 xl:border-2 xl:border-r-0">
-                            {typeof page.sections.head.description === "object" ? page.sections.head.description.map((description, index) => {
-                                return (
-                                    <p key={index} className="base-hero text-sm whitespace-pre-line">
-                                        { description }
-                                    </p>
-                                )
-                            }) : page.sections.head.description}
+                    <Divider />
+                    <div className="flex flex-col gap-7 max-w-screen-md">
+                        <Hero title="Yazılım kariyerim nasıl başladı?" titleClassName="text-base" className="mt-11 gap-5">
+                            <p className="text-sm whitespace-pre-line">Oyunlar sayesinde başladım yazılım sektörüne. Yazılım sektörünün bana getirdiği faydalardan biri ise araştırma yeteneklerimi geliştirmesi oldu.</p>
+                            <p className="text-sm whitespace-pre-line">Oluşan araştırma becerisi sayesinde öğrenme tutkum oluştu. Bu sayede şuan gördüğünüz siteyi yazabildim, Github üzerinde açık kaynak kodlu projeler oluşturabildim ve kendimi geliştirebildim.</p>
+                            <p className="text-sm whitespace-pre-line">Şuanda Yazılım Geliştiricisi ünvanı ile hayatıma devam etmekteyim. İleriye dönük planlarım arasında JS üzerine uzmanlık kurmak var.</p>
                         </Hero>
-                        <Hero title={page.sections.sub.title} titleClassName="text-base" className="mt-9 gap-5 xl:p-12 xl:border-2 xl:border-l-8 xl:border-black xl:border-opacity-20 xl:mt-0 xl:dark:border-white xl:dark:border-opacity-10">
-                            {typeof page.sections.sub.description === "object" ? page.sections.sub.description.map((description, index) => {
-                                return (
-                                    <p key={index} className="text-sm whitespace-pre-line">
-                                        { description }
-                                    </p>
-                                )
-                            }) : page.sections.sub.description}
+                        <Hero title="Özetle" titleClassName="text-base" className="mt-7 gap-5">
+                            <p className="text-sm whitespace-pre-line">25 Eylül 2000 tarihinde Trabzonda bir devlet hastanesinde doğdum. Küçük yaşlarda abilerim sayesinde bilgisayarla tanıştım.</p>
+                            <p className="text-sm whitespace-pre-line">Bilgisayarla tanıştıktan sonra oyun oynamak en büyük hobilerimden birisi oldu. Bunun dışında geziler düzenlemek ve müzik dinlemek ise hayatımın sanallıktan uzak olan kısmını oluşturdu.</p>
                         </Hero>
                     </div>
                 </PageTransition>
@@ -54,39 +38,12 @@ function Index(props) {
     )
 }
 
-export async function getStaticProps() {
+export function getServerSideProps(context) {
+    const { req } = context
+    const canonical = req.headers.host + "/"
     return {
         props: {
-            page: {
-                title: "Ben Enes Bayraktar.\nİstanbulda Üniversite okuyan bir Yazılımcıyım.",
-                description: [
-                    "Javascript, front-end teknolojileri, web servisleri, bilgisayar oyunları ve araştırma gibi konularla yakından ilgileniyorum.",
-                    "Yaptığım yazılımlar ile alakalı kaynak kodları açık bir şekilde Github adresimde paylaşıyorum.",
-                    "İnsanların başarılı olabilmek için sadece yeteneğe değil çok çalışmaya ihtiyaçları olduğuna inanıyorum."
-                ],
-                head: {
-                    title: "Giriş",
-                    description: "Enes Bayraktar'ın kişisel bloğunda hakkında yayınlamış olduğu iletişim bölümü. Buradan kendisine ulaşabilirsiniz."
-                },
-                sections: {
-                    head: {
-                        title: "Kimim ben?",
-                        description: [
-                            "ismim Enes. 25 Eylül 2000 tarihinde Trabzonda bir devlet hastanesinde doğdum. Küçük yaşlarda abilerim sayesinde bilgisayarla tanıştım.",
-                            "İlk bilgisayarım toplama bir kasaydı. Yıkanılabilir topu olan bir mouse ve kocaman tuşları olan bir klavye ile merhaba dedim elektronik dünyaya."
-                        ]
-                    },
-                    sub: {
-                        title: "Yazılım kariyerim nasıl başladı?",
-                        description: [
-                            "Oynadığım oyunlarda kurulan klanlara üye olmak için tıkladığım linklerle başladı websiteleri ile olan etkileşimim. O zamanlar oyunlarda klan üyelerinden ayrışabilmek için Grafiker, Kodlamacı vesaire gibi bir sürü kavram vardı.",
-                            "Bende kolları sıvadım açtım Photoshop'u başladım tasarlamalaya. Bir şeyler yaptıkca ve yaptıklarım insanlar tarafından beğenildikçe içime işledi bu duygu.",
-                            "Tasarımlarımı ilk MyBB forum sistemine yapmıştım ancak kodlayabilecek insan olmayınca araştırmalar vesaire derken HTML, CSS ve Javascrpt üçlüsüyle tanıştım. Bu süreçte tanıştığım insanlar hem yaşımın küçüklüğünden hem de yetenek mi gördüler bilmiyorum ancak bana çok yardımcı olmuşlardı.",
-                            "Bu heves ile beraber farklı internet siteleri ve projeler yapma yolunda ilerlemeye başladım. İşte şimdi olduğum yere geldim. 2014'de başlayan bu serüven benim geleceğim oldu."
-                        ]
-                    }
-                }
-            }
+            canonical: canonical
         }
     }
 }
