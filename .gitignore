@@ -198,3 +198,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Envrioment variables
+.env.development
+.env.production
