@@ -13,6 +13,10 @@
         @apply font-bold hover:underline hover:text-yellow-400
     }
 
+    .base--underline-link {
+        @apply hover:underline hover:text-yellow-400
+    }
+
     .base--divider {
         @apply w-full h-px bg-black bg-opacity-20 dark:bg-white
     }
