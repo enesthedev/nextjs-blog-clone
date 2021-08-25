@@ -2,7 +2,7 @@
 Here you know what i need to do in this project. İf you want to contribute it go ahead.
 
 ### In Progress
-- [ ] Multi-language support
+- [ ] MDX post support
 
 ### Done
 - [x] Create my first todo.md
