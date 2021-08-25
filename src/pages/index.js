@@ -40,7 +40,7 @@ function Index() {
 
 export function getServerSideProps(context) {
     const { req } = context
-    const canonical = req.headers.host + "/"
+    const canonical = (req.headers["x-forwarded-proto"] || req.connection.encrypted ? "https" : "http") + "://" + req.headers.host + "/"
     return {
         props: {
             canonical: canonical

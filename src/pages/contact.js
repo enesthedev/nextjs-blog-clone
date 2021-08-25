@@ -13,7 +13,7 @@ function Contact() {
                 <meta name="title" content="İletişim - Enes Bayraktar" />
                 <meta name="description" content="Enes Bayraktar'ın kişisel bloğunda hakkında yayınlamış olduğu iletişim bölümü. Buradan kendisine ulaşabilirsiniz." />
             </Head>
-            <Wrapper className="px-4 pt-7 pb-2">
+            <Wrapper className="px-4 pt-7 pb-4">
                 <PageTransition>
                     <Hero title="Bu sayfada benimle iletişime geçebilmek için gereken tüm bilgileri bulabilirsiniz." titleClassName="font-normal" className="gap-10">
                         <small>Sizlerle beraber güzel projelere adım atalabileceğimize inanıyorum. Benimle iletişim halinde bulunmak için altta verilmiş olan formu doldurmanız yeterlidir. Ben size en yakın zamanda döneceğim.</small>
@@ -44,7 +44,7 @@ function Contact() {
 
 export function getServerSideProps(context) {
     const { req } = context
-    const canonical = req.headers.host + "/contact"
+    const canonical = (req.headers["x-forwarded-proto"] || req.connection.encrypted ? "https" : "http") + "://" + req.headers.host + "/contact"
     return {
         props: {
             canonical: canonical

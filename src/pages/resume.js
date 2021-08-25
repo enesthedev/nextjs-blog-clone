@@ -32,7 +32,7 @@ function Resume() {
 
 export function getServerSideProps(context) {
     const { req } = context
-    const canonical = req.headers.host + "/resume"
+    const canonical = (req.headers["x-forwarded-proto"] || req.connection.encrypted ? "https" : "http") + "://" + req.headers.host + "/contact"
     return {
         props: {
             canonical: canonical
