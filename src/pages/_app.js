@@ -18,10 +18,10 @@ class BlogApp extends App {
                     <meta name="keywords" content="Enes Bayraktar, enes, blog, portfolio, iletişim, cv, geliştirici, front end developer, senior developer," />
                     <meta name="application-name" content="Enes Bayraktar'ın Bloğu" />
                     {pageProps.canonical ? <link rel="canonical" href={pageProps.canonical} /> : ""}
+                    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
                 </Head>
                 <PageLayout menus={{
                     '/': 'Giriş',
-                    '/resume': 'Özgeçmiş',
                     '/certificates': 'Sertifikalar',
                     '/contact': 'İletişim'
                 }}>
