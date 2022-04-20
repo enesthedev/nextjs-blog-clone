@@ -1,13 +1,24 @@
-# Open Source Blog Project
+<div align="left">
+    <h3>NextJS Blog Clone</h3>
+	<sup>Last Updated At: 30.08.2021</sup>
+    <hr/>
+    <div>
+      <small>The blog website built with <a href="https://tailwindcss.com/">TailwindCSS</a> and <a href="https://nextjs.org">React (NextJS)</a> inspired by another GitHub user.</small>
+    </div>
+</div>
 
-The blog website built with [TailwindCSS](https://tailwindcss.com/) and [React (NextJS)](https://nextjs.org/) inspired by [@ademilter](https://github.com/ademilter).
+#### Specifications
+- No back-end, imageine to make it.
+- NextJS 11, React 17, Swal2.
+- Best component directory structure and design for beginners.
+- Media based dark/light theme support.
+- Responsive design.
 
-### Done
-- [x] Create my first todo.md
-- [x] Edit readme.md for another developers
-- [x] Add page name based title to project
-- [x] Add desciption meta to pages
-- [x] Update project Github and package.json description
-- [x] Refactor Wrapper, BoldLink, Divider, Hero and Social components
-- [x] Check all components
-- [x] Light theme
+#### Install Instructions
+Clone project and open terminal inside cloned directory and follow instructions below.
+
+```bash
+cd project-name
+npm install -D
+npm run dev
+```
